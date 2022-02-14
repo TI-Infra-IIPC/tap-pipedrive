@@ -46,30 +46,26 @@
       "format": "date-time"
     },
     "prices": {
-      "type": ["null", "object", "array"],
-      "items": { "type": "object" },
-      "properties": {
-        "USD": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": ["null", "integer"]
-            },
-            "product_id": {
-              "type": ["null", "integer"]
-            },
-            "price": {
-              "type": ["null", "integer"]
-            },
-            "currency": {
-              "type": ["null", "string"]
-            },
-            "cost": {
-              "type": ["null", "number"]
-            },
-            "overhead_cost": {
-              "type": ["null", "number"]
-            }
+      "type": ["null", "array"],
+      "items": { "type": "object",
+        "properties": {
+          "id": {
+            "type": ["null", "integer"]
+          },
+          "product_id": {
+            "type": ["null", "integer"]
+          },
+          "price": {
+            "type": ["null", "integer"]
+          },
+          "currency": {
+            "type": ["null", "string"]
+          },
+          "cost": {
+            "type": ["null", "number"]
+          },
+          "overhead_cost": {
+            "type": ["null", "number"]
           }
         }
       }
